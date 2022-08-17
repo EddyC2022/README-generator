@@ -32,7 +32,7 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown({ project_title, description, installation, usage, contribution,test, copyright_year,  copyright_name, license }) {
+function generateMarkdown({ project_title, description, installation, usage, contribution,test, copyright_year,  copyright_name, license,}) {
   return `
   ${project_title} ![]${license}
 
@@ -84,7 +84,6 @@ function generateMarkdown({ project_title, description, installation, usage, con
   -----------
   
   Copyright [${copyright_year}] [${copyright_name}]`;
-;
 }
 
 
