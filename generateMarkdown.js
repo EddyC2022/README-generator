@@ -32,10 +32,59 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(answers) {
+function generateMarkdown({ project_title, description, installation, usage, contribution,test, copyright_year,  copyright_name }) {
   return `
+  ${project_title} ![](https://img.shields.io/badge/license-MIT-blue)
   
-`;
+  ## Description 
+      
+  ${description}
+
+  
+      
+  ## Table of Contents
+      
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [Contributing](#contributing)
+  * [Questions](#questions)
+  * [Tests](#tests)
+  * [License](#license)
+      
+      
+  ## Installation
+      
+  ${installation}
+      
+  ## Usage 
+      
+  ${usage}
+      
+  ## Contributing
+
+  ${contribution}
+
+  ## Questions?
+  
+  Questions about this project can be directed to: 
+  - Github: /EddyC2022
+  - Email: eduardoangelcruz1997@gmail.com
+
+  ## Tests
+
+  ${test}
+
+  ## License
+      
+  Content in this project is governed under the MIT License. 
+
+  To read the license in its entirety, click here: [MIT](./LICENSE)
+
+  -----------
+  
+  Copyright [${copyright_year}] [${copyright_name}]`;
+;
 }
 
 

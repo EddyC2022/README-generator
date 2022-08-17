@@ -1,57 +1,58 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkDown = require('./generateMarkdown')
 
 const generateREADME = ({ project_title, description, installation, usage, contribution,test, copyright_year,  copyright_name }) =>
-  `# ${project_title} ![](https://img.shields.io/badge/license-MIT-blue)
+  // `# ${project_title} ![](https://img.shields.io/badge/license-MIT-blue)
   
-  ## Description 
+  // ## Description 
       
-  ${description}
+  // ${description}
 
   
       
-  ## Table of Contents
+  // ## Table of Contents
       
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Credits](#credits)
-  * [Contributing](#contributing)
-  * [Questions](#questions)
-  * [Tests](#tests)
-  * [License](#license)
+  // * [Installation](#installation)
+  // * [Usage](#usage)
+  // * [Credits](#credits)
+  // * [Contributing](#contributing)
+  // * [Questions](#questions)
+  // * [Tests](#tests)
+  // * [License](#license)
       
       
-  ## Installation
+  // ## Installation
       
-  ${installation}
+  // ${installation}
       
-  ## Usage 
+  // ## Usage 
       
-  ${usage}
+  // ${usage}
       
-  ## Contributing
+  // ## Contributing
 
-  ${contribution}
+  // ${contribution}
 
-  ## Questions?
+  // ## Questions?
   
-  Questions about this project can be directed to: 
-  - Github: /EddyC2022
-  - Email: eduardoangelcruz1997@gmail.com
+  // Questions about this project can be directed to: 
+  // - Github: /EddyC2022
+  // - Email: eduardoangelcruz1997@gmail.com
 
-  ## Tests
+  // ## Tests
 
-  ${test}
+  // ${test}
 
-  ## License
+  // ## License
       
-  Content in this project is governed under the MIT License. 
+  // Content in this project is governed under the MIT License. 
 
-  To read the license in its entirety, click here: [MIT](./LICENSE)
+  // To read the license in its entirety, click here: [MIT](./LICENSE)
 
-  -----------
+  // -----------
   
-  Copyright [${copyright_year}] [${copyright_name}]`;
+  // Copyright [${copyright_year}] [${copyright_name}]`;
 
 inquirer
   .prompt([
@@ -109,3 +110,5 @@ inquirer
     fs.writeFile('README.md', READMEPageContent, (err) => err ? console.log(err) : console.log('Successfully created README.md!')
     );
   });
+
+  generateMarkDown();
