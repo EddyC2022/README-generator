@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkDown = require('./generateMarkdown')
 
-const generateREADME = ({ project_title, description, installation, usage, contribution,test, copyright_year,  copyright_name }) =>
+// const generateREADME = ({ project_title, description, installation, usage, contribution,test, copyright_year,  copyright_name }) =>
   // `# ${project_title} ![](https://img.shields.io/badge/license-MIT-blue)
   
   // ## Description 
@@ -105,10 +105,10 @@ inquirer
     }
   ])
   .then((answers) => {
-    const READMEPageContent = generateREADME(answers);
+    const READMEPageContent = generateMarkDown(answers);
 
     fs.writeFile('README.md', READMEPageContent, (err) => err ? console.log(err) : console.log('Successfully created README.md!')
     );
   });
 
-  generateMarkDown();
+  generateMarkDown
