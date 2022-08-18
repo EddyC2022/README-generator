@@ -1,9 +1,9 @@
 
-  test ![]GNU
+  # README Generator ![](https://img.shields.io/badge/License-ISC-blue)
 
   ## Description 
       
-  teklpwegf
+  generates README with simple Q/A prompts (this is an example readme and is not actually licensed by ISC)
 
   
       
@@ -20,32 +20,29 @@
       
   ## Installation
       
-  we
+  NODE REQUIRED > Clone repo 
       
   ## Usage 
       
-  gwegweg
+  open terminal > cd file > npm install > node index
       
   ## Contributing
 
-  weg
+  NA
 
   ## Questions?
   
   Questions about this project can be directed to: 
-  - Github: /EddyC2022
+  - Github: https://github.com/EddyC2022
   - Email: eduardoangelcruz1997@gmail.com
 
   ## Tests
 
-  wegweg
+  test
 
   ## License
       
-  Content in this project is governed under the MIT License. 
-
-  To read the license in its entirety, click here: [MIT](./LICENSE)
-
-  -----------
+  Licensed under the [ISC](https://opensource.org/licenses/ISC) license 
+  _________________
   
-  Copyright [weg] [test]
+  Copyright [2022] [Eduardo Cruz]
